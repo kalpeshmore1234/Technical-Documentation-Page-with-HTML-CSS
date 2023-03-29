@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Python Documentation</title>
+    <link rel = "stylesheet" href="styles.css" />
+</head>
+<body>
+    <nav id="navbar">
+        <header>Python Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+            <li><a class="nav-link" href="#Variables">Variables</a></li>
+            <li><a class="nav-link" href="#Data_types">Data types</a></li>
+            <li><a class="nav-link" href="#if...else_statement">if...else statement</a></li>
+        </ul>
+
+    </nav>
+
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <p>Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.</p>
+
+                <p>The Python interpreter and the extensive standard library are freely available in source or binary form for all major platforms from the Python web site, <a href="https://www.python.org">https://www.python.org</a> , and may be freely distributed. The same site also contains distributions of and pointers to many free third party Python modules, programs and tools, and additional documentation.</p>
+
+                <p>The Python interpreter is easily extended with new functions and data types implemented in C or C++ (or other languages callable from C). Python is also suitable as an extension language for customizable applications.</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Hello_world">
+            <header>Hello world</header>
+            <article>
+                To get started with writing Python, open the IDE and write
+                your first "Hello world" Python code:
+                <code>print("Hello world")</code>
+                output:
+                <code> Hello world</code>
+                see the Hello world in your output.
+            </article>
+
+        </section>
+
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <article>
+
+            <p>Variables are containers for storing data values.</p>
+            <p>Python has no command for declaring a variable.</p>
+            <p>A variable is created the moment you first assign a value to it.</p>
+            <code>x=5
+                y="John"
+                print(x)
+                print(y)
+            </code>output:
+            <code>5
+                John
+            </code>
+
+
+            <p>Variables do not need to be declared with any particular type, and can even change type after they have been set.</p>
+            <code> x = 4 # x is of type int
+                x = "Sally" # x is now of type str
+            </code>
+            </article>
+        </section>
+
+        <section class="main-section" id="Data_types">
+            <header>Data types</header>
+            <article>
+                <p>Python has the following data types built-in by default, in these categories:</p>
+                <ul>
+                    <li>Text type: str</li>
+                    <li>Numeric types: int, float, complex</li>
+                    <li>Sequence types: list, tuple, range</li>
+                    <li>Mapping type: dict</li>
+                    <li>Set types: set, frozenset</li>
+                    <li>Boolean type: bool</li>
+                    <li>Binary types: bytes, bytearray, memoryview</li>
+                    <li>None type: NoneType</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="if...else_statement">
+            <header>if...else statement</header>
+            <article>
+                <p>In computer programming, we use the if statement to run a block code only when a certain condition is met.</p>
+                <p>In Python there are three forms of the if...else statement</p>
+                <ol>
+                    <li>if statement</li>
+                    <li>if else statement</li>
+                    <li>if elif else statement</li>
+                </ol>
+                <p id = "ifl">1.Python if statement</p>
+                <code> number = 10
+                    # check if number is greater than 0
+                    if number > 0:
+                        print('Number is positive.')
+
+                    print('The if statement is easy')
+                </code>output:
+                <code>Number is positive
+                    The if statement is easy
+                </code>
+
+                <p id="ifl">2.Python if...else statement</p>
+                <code>number = 10
+
+                    if number > 0:
+                        print('Positive number')
+
+                    else:
+                        print('Negative number')
+
+                    print('This statement is always executed')
+                </code>output:
+                <code>Positive number
+                    This statement is always executed
+                </code>
+
+                <p id="ifl">3.Python if...elif...else statement</p>
+                <code>number = 0
+
+                    if number > 0:
+                        print("Positive number")
+                        
+                    elif number == 0:
+                        print('Zero')
+
+                    else:
+                        print('Negative number')
+
+                    print('This statement is always executed')
+                </code>output:
+                <code>Zero
+                    This statement is always executed
+                </code>
+            </article>
+        </section>
+
+    </main>
+    
+</body>
+</html>
